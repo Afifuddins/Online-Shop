@@ -16,7 +16,7 @@ For manual setup of the application, you need to install a Laravel skeleton appl
 Make sure that you've created the database in advance and added the configuration to the .env file in your application directory. Sometimes, using the .env file makes problems and you will get exceptions that the connection to the database failed. In that case, add the database credentials to the resource/db section of your ./config/shop.php file too!
 
 For MySQL, you should change the database charset/collation in your config/database.php file before the tables are created to:
-
+<text
 'connections' => [
     'mysql' => [
         // ...
@@ -39,6 +39,7 @@ To circumvent this problem, drop the new tables if there have been any created a
         // ...
     ]
 ]
+</text>
 If you want to use a database server other than MySQL, please have a look into the article about supported database servers and their specific configuration.
 
 ## Instalation
